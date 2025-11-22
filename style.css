@@ -1,0 +1,105 @@
+<style>
+    html, body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+    body { font-family: "FK Grotesk Neue Regular", "FK Grotesk Regular", "FK Grotesk Neue Light", "FK Grotesk Light", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: "FK Grotesk Neue Medium", "FK Grotesk Neue Regular", "FK Grotesk Regular", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    @media (max-width: 768px) { html { font-size: 16px; } }
+    img { image-rendering: -webkit-optimize-contrast; }
+    .font-light { font-family: "FK Grotesk Light", "Inter", system-ui, -apple-system, sans-serif; }
+    .font-neue { font-family: "FK Grotesk Neue Regular", "Inter", system-ui, -apple-system, sans-serif; }
+    .font-neue-light { font-family: "FK Grotesk Neue Light", "Inter", system-ui, -apple-system, sans-serif; }
+    .font-neue-medium { font-family: "FK Grotesk Neue Medium", "Inter", system-ui, -apple-system, sans-serif; }
+    .font-mono { font-family: "Berkeley Mono Regular", "Monaco", "Menlo", "Consolas", monospace; }
+    .font-mono-bold { font-family: "Berkeley Mono Bold", "Monaco", "Menlo", "Consolas", monospace; }
+    :root { --font-family: "FK Grotesk Neue Regular", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    body.sonar-body { font-family: var(--font-family); }
+    body.sonar-body:has(.chat-popup.active) { overflow: auto !important; position: static !important; touch-action: auto !important; }
+    body.chat-open { overflow: auto !important; position: static !important; touch-action: auto !important; }
+    @media (max-width: 768px) {
+        .chat-popup {
+            position: fixed !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            top: 0 !important;
+            width: 100vw !important;
+            height: 100dvh !important;
+            border-radius: 0 !important;
+            z-index: 9999 !important;
+        }
+        body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+        }
+        .container {
+            overflow-x: hidden !important;
+            max-width: 100% !important;
+        }
+    }
+    @media (min-width: 1025px) {
+        .chat-popup {
+            height: auto !important;
+            max-height: 600px !important;
+        }
+    }
+    @media (min-width: 1025px) and (max-height: 820px) {
+        .chat-popup {
+            position: fixed !important;
+            right: 24px !important;
+            left: auto !important;
+            top: 20px !important;
+            bottom: 20px !important;
+            height: auto !important;
+            max-height: calc(100vh - 40px) !important;
+            border-radius: 24px !important;
+        }
+    }
+   
+    .chat-input-container {
+        background: transparent !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        padding: 16px 20px !important;
+        margin: 0 -12px -12px -12px !important;
+    }
+    .input-wrapper {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-radius: 20px !important;
+        padding: 8px !important;
+        transition: all 0.2s ease !important;
+    }
+    .input-wrapper:focus-within {
+        border-color: var(--accent-blue) !important;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+    }
+    .chat-input-container textarea {
+        background: transparent !important;
+        border: none !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        padding: 12px 16px !important;
+        resize: none !important;
+        min-height: 40px !important;
+        max-height: 120px !important;
+    }
+    .chat-input-container textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+    .send-btn {
+        background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%) !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 36px !important;
+        height: 36px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #fff !important;
+        transition: all 0.2s ease !important;
+    }
+    .send-btn:hover {
+        transform: scale(1.05) !important;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
+    }
+</style>
