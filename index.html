@@ -19,7 +19,8 @@
 <link rel="canonical" href="https://github.com/manojphaju"> 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     
 
     <script src="req/js/styles.js"></script>
@@ -472,6 +473,10 @@
                             <span class="tech-tag">
                                 <i class="fas fa-balance-scale"></i>
                                 ELB
+                            </span>
+                             <span class="tech-tag">
+                                <i class="fas fa-cube"></i>
+                                ECR
                             </span>
                             <span class="tech-tag">
                                 <i class="fas fa-expand-arrows-alt"></i>
@@ -1203,7 +1208,134 @@
                     collaboration, and knowledge sharing.
                 </p>
             </div>
-    
+<!-- Amazon Prime Video -->
+            <div class="experience-content">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-icon">
+                            <!-- <i class="fa-solid fa-shield fa-stack-2x"></i> -->
+                             <i class="fas fa-play-circle"></i>
+
+                        </div>
+                        <div class="experience-info">
+                            <h3><a href="https://github.com/manojphaju/amazon-prime-video.git" target="_blank" rel="noopener noreferrer">Amazon Prime Video </a></h3>
+                            
+                        </div>
+                      
+                    </div>
+                    
+                    <div class="experience-description">
+                        <p style="text-align: justify;"><b>Project Overview:</b><br>
+                             I successfully designed, deployed, and automated a production-grade Amazon Prime Video Clone using Terraform, Jenkins, ArgoCD, 
+                             Kubernetes, and AWS services. This deployment runs on Amazon EKS version 1.33, with centralized encryption control and secret 
+                             protection powered by AWS KMS.</p>
+                          
+                    </div>
+
+                    <div class="experience-description">
+                        <b>Key Contributions:</b>
+                            <ul>
+                                <li style="text-align: justify;"><b>Source Control:</b> Application code and Kubernetes/Helm manifests managed in GitHub.</li>
+                                <li style="text-align: justify;"><b>CI Pipeline:</b> Jenkins automates builds, npm installs, SonarQube code analysis, and Trivy security scans. Memory issues were resolved by upgrading the instance to t2.large and using cleanWs().</li>
+                                <li style="text-align: justify;"><b>Containerization:</b> Application services containerized using Docker and pushed to AWS ECR, resolving initial AWS CLI credential issues.</li>
+                                <li style="text-align: justify;"><b>Infrastructure Provisioning:</b> Entire AWS infrastructure provisioned via Terraform, including VPC, subnets, route tables, 
+                                    Internet Gateway, security groups, IAM roles, KMS, CloudWatch, EKS v1.33, ECR, and Route 53 for DNS management.</li>
+                                <li style="text-align: justify;"><b>EKS Node Creation:</b> Initially failing or taking 30+ minutes due to IAM misconfigurations, 
+                                    KMS alias conflicts, Elastic IP limits, and duplicate CloudWatch logs. Fixed by attaching required IAM policies, 
+                                    cleaning unused EIPs, resolving KMS alias conflicts, and removing duplicate log groups → node creation 
+                                    succeeded in 8–10 minutes.</li>
+                                <li style="text-align: justify;"><b>GitOps Deployment:</b> Jenkins pipelines with Helm installed ArgoCD, Prometheus, and Grafana onto 
+                                    EKS. ArgoCD automatically syncs manifests from GitHub for continuous deployment.</li>
+                                <li style="text-align: justify;"><b>Route 53 Integration:</b> Configured public hosted zones, routing rules, and linked ELBs to 
+                                    provide high availability and secure traffic routing. Health checks and failover ensure traffic goes only to healthy nodes.</li>
+                                <li style="text-align: justify;"><b>Security:</b> AWS KMS used for encryption; aws-auth ConfigMap updated to give Jenkins proper RBAC (e.g., eks:DescribeCluster, eks:ListClusters) permissions for EKS deployments.
+                                    </li>
+                                    <li style="text-align: justify;"><b>Monitoring & Observability:</b> Prometheus collects metrics; Grafana dashboards provide real-time 
+                                    insights into cluster and application performance.</li>
+                                
+                                    
+                            </ul>
+
+                          
+                    </div>
+
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>CI/CD / Source Control</h4>
+                                <p>Jenkins, Docker, GitHub</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Code Quality & Security</h4>
+                                <p>SonarQube, Trivy</p>
+                            </div>
+                        </div>
+
+                           <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Infrastructure as Code</h4>
+                                <p>Terraform (all AWS resources provisioned using modules, variables, and outputs)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Cloud & Infrastructure</h4>
+                                <p>AWS EKS v1.33, AWS ECR, AWS VPC, Private & Public Subnets, Route Tables, Subnet Associations, Internet Gateway, Security Groups, IAM, KMS, Route 53, CloudWatch</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Backend / Frontend</h4>
+                                <p>Node.js / React (Vite)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Deployment</h4>
+                                <p>Kubernetes & GitOps(ArgoCD), Helm</p>
+                            </div>
+                        </div>
+
+                         <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Monitoring & Observability</h4>
+                                <p>Prometheus, Grafana</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    <!-- Wanderlust -->
     <div class="experience-content">
                 <div class="experience-card">
                     <div class="experience-header">
@@ -1596,6 +1728,7 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="req/js/material-3.js"></script>
     <script src="req/js/chatbot-fix.js"></script>
+    
     <script>
     // ===== Mobile Nav Toggle & Active Link Highlight =====
     (function(){
@@ -1659,7 +1792,10 @@
       }
     });
   }
+
+
 })();
 </script>
+
 </body>
 </html>
