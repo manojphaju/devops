@@ -459,6 +459,10 @@
                                 RDS
                             </span>
                             <span class="tech-tag">
+                                <i class="fas fa-key"></i>
+                                ALB
+                            </span>
+                            <span class="tech-tag">
                                 <i class="fas fa-hdd"></i>
                                 S3
                             </span>
@@ -644,6 +648,14 @@
                             <span class="tech-tag">
                                 <i class="fas fa-expand-arrows-alt"></i>
                                 Auto-scaling
+                            </span>
+                             <span class="tech-tag">
+                                <i class="fas fa-network-wired"></i>
+                                NGINX
+                            </span>
+                             <span class="tech-tag">
+                                <i class="fas fa-network-wired"></i>
+                                Ingress
                             </span>
                         </div>
                     </div>
@@ -1208,7 +1220,98 @@
                     collaboration, and knowledge sharing.
                 </p>
             </div>
-<!-- Amazon Prime Video -->
+<!-- Golang Applicaiton -->
+            <div class="experience-content">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-icon">
+                            <!-- <i class="fa-solid fa-shield fa-stack-2x"></i> -->
+                             <i class="fas fa-code"></i>
+
+                        </div>
+                        <div class="experience-info">
+                            <h3><a href="https://github.com/manojphaju/go-web-app.git" target="_blank" rel="noopener noreferrer">GoLang Application Deployment </a></h3>
+                            
+                        </div>
+                      
+                    </div>
+                    
+                    <div class="experience-description">
+                        <p style="text-align: justify;"><b>Project Overview:</b><br>
+                            This project involved deploying a GoLang application to AWS EKS using Docker, Kubernetes, Helm, ArgoCD, and GitHub Actions for a fully automated CI/CD pipeline.</p>
+                          
+                    </div>
+
+                    <div class="experience-description">
+                        <b>Key Contributions:</b>
+                            <ul>
+                                <li style="text-align: justify;"><b>Docker Image & Architecture Configuration:</b> Built a Dockerfile to containerize the Go application, resolved deployment issues caused by a misconfigured architecture (GOARCH=arm64 vs x86_64) by rebuilding the image with the correct architecture (GOARCH=amd64), enabling successful deployment on AWS EKS.</li>
+                                <li style="text-align: justify;"><b>Kubernetes & Helm for Deployment:</b> Created Kubernetes manifests for Deployment, Service, and Ingress, automated management with Helm, and integrated GitHub Actions to automatically update the Docker build tag in the Helm values.yaml file on each push.</li>
+                                <li style="text-align: justify;"><b>Ingress & Load Balancing:</b> Set up Nginx Ingress Controller to handle traffic routing and load balancing for the GoLang app.</li>
+                                <li style="text-align: justify;"><b>Continuous Delivery with ArgoCD:</b> Configured ArgoCD to automatically sync and deploy changes from GitHub to EKS, ensuring continuous delivery and consistency across environments.</li>
+                                <li style="text-align: justify;"><b>DNS Configuration:</b> Used AWS Route 53 to map a custom DNS to the deployed application for easy access.</li>
+                            </ul>
+
+                            <b>Challenges Overcome:</b>
+                            <ul>
+                                <li style="text-align: justify;"><b>Docker Image Architecture:</b>  Resolved by rebuilding the Docker image with the correct architecture.</li>
+                                <li style="text-align: justify;"><b>golangci-lint Issues:</b> Fixed Go version compatibility and ensured the linter worked smoothly in the CI/CD pipeline.</li>
+                                <li style="text-align: justify;"><b>CI/CD Automation:</b> Fully automated the CI/CD pipeline with GitHub Actions to build, tag, and deploy the application using Helm and ArgoCD.</li>
+                            </ul>
+                             <b>Outcome:</b>
+                            <ul>
+                                <li style="text-align: justify;">The application was successfully deployed to AWS EKS with an automated CI/CD pipeline powered by GitHub Actions, Helm, and ArgoCD. The deployment process became efficient, scalable, and fully automated, with continuous monitoring for updates and changes.</li>
+                            </ul>
+                          
+                    </div>
+
+                    
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>CI/CD / Source Control</h4>
+                                <p>GitHub Actions, Docker, GitHub</p>
+                            </div>
+                        </div>
+       
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Cloud & Infrastructure</h4>
+                                <p>AWS EKS, Nginx Ingress Controller, Route 53, </p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Frontend</h4>
+                                <p>Go</p>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-card">
+                            <div class="achievement-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>Deployment</h4>
+                                <p>Kubernetes & GitOps(ArgoCD), Helm</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    <!-- Amazon Prime Video -->
             <div class="experience-content">
                 <div class="experience-card">
                     <div class="experience-header">
